@@ -1,0 +1,67 @@
+{
+    "title": "懒人笔记",
+    "description": "好记性不如做笔记",
+    "author": "lijiam",
+    "output.name": "site",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "root": ".",
+    },
+    "plugins": [
+        "code",
+        "-search",
+        "search-pro",
+        "github",
+        "splitter",
+        "tbfed-pagefooter",
+        "donate",
+        "-sharing",
+        "sharing-plus",
+        "prism",
+        "-highlight",
+        "styles-less",
+        "toggle-chapters",
+        "multipart",
+        "ancre-navigation"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/lijiam"
+        },
+        "code": {
+            "copyButtons": true
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright © lijiam 2019",
+            "modify_label": "本书发布时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "sharing": {
+            "facebook": true,
+            "twitter": true,
+            "weibo": true,
+            "qq": true,
+            "all": [
+                "douban",
+                "google",
+                "qzone",
+                "linkedin"
+            ]
+        },
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-solarizedlight.css"
+            ],
+            "lang": {
+                "flow": "typescript"
+            }
+        }
+    },
+    "styles": {
+        "website": "assets/styles/website.less",
+        "ebook": "assets/styles/ebook.less",
+        "pdf": "assets/styles/pdf.less",
+        "mobi": "assets/styles/mobi.less",
+        "epub": "assets/styles/epub.less"
+    }
+}
