@@ -1,67 +1,59 @@
 {
-    "title": "懒人笔记",
-    "description": "好记性不如做笔记",
-    "author": "lijiam",
+    "title": "安全基地",
+    "description": "记录安全研究和学习中的点点滴滴",
+    "author": "blackwin",
     "output.name": "site",
     "language": "zh-hans",
     "gitbook": "3.2.3",
     "root": ".",
+    "styles": {                         
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
     },
     "plugins": [
-        "code",
-        "-search",
+        "-lunr", 
+        "-search", 
         "search-pro",
-        "github",
-        "splitter",
+        "expandable-chapters",
+        "back-to-top-button",
         "tbfed-pagefooter",
-        "donate",
-        "-sharing",
-        "sharing-plus",
-        "prism",
-        "-highlight",
-        "styles-less",
-        "toggle-chapters",
-        "multipart",
-        "ancre-navigation"
+        "popup",
+		"ace",
+        "pageview-count",
+        "auto-scroll-table",
+		"include-codeblock",
+		"splitter",
+		"simple-page-toc",
+		"copy-code-button",
+		"sectionx"
     ],
     "pluginsConfig": {
-        "github": {
-            "url": "https://github.com/lijiam"
-        },
-        "code": {
-            "copyButtons": true
+        "sidebar-style": {
+            "title": "安全研究",
+            "author": "blackwin"
         },
         "tbfed-pagefooter": {
-            "copyright": "Copyright © lijiam 2019",
-            "modify_label": "本书发布时间：",
+            "copyright":"Copyright &copy blackwin 2000-2020",
+            "modify_label": "文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-        "sharing": {
-            "facebook": true,
-            "twitter": true,
-            "weibo": true,
-            "qq": true,
-            "all": [
-                "douban",
-                "google",
-                "qzone",
-                "linkedin"
-            ]
+        "theme-default": {
+            "showLevel": true
         },
-        "prism": {
-            "css": [
-                "prismjs/themes/prism-solarizedlight.css"
-            ],
-            "lang": {
-                "flow": "typescript"
-            }
+		"include-codeblock": {
+			"template": "ace",
+            "unindent": true,
+            "theme": "monokai"
+        },
+		"simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true 
+        },
+		"sectionx": {
+          "tag": "b"
         }
-    },
-    "styles": {
-        "website": "assets/styles/website.less",
-        "ebook": "assets/styles/ebook.less",
-        "pdf": "assets/styles/pdf.less",
-        "mobi": "assets/styles/mobi.less",
-        "epub": "assets/styles/epub.less"
     }
 }
